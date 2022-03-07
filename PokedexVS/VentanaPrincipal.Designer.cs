@@ -31,6 +31,8 @@
             this.izquierda = new System.Windows.Forms.Button();
             this.derecha = new System.Windows.Forms.Button();
             this.nombrePokemon = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // izquierda
@@ -64,16 +66,26 @@
             this.nombrePokemon.TabIndex = 3;
             this.nombrePokemon.Text = "label1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(191, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 224);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 397);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.derecha);
             this.Controls.Add(this.izquierda);
             this.Name = "VentanaPrincipal";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,6 +95,7 @@
         private System.Windows.Forms.Button izquierda;
         private System.Windows.Forms.Button derecha;
         private System.Windows.Forms.Label nombrePokemon;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
