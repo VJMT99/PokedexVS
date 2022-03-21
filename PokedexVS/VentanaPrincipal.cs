@@ -30,6 +30,7 @@ namespace PokedexVS
         }
         private void izquierda_Click(object sender, EventArgs e)
         {
+            //boton izquierdo
             if(idActual > 1 && !mod)
             {
                 idActual--;
@@ -45,6 +46,7 @@ namespace PokedexVS
 
         private void derecha_Click(object sender, EventArgs e)
         {
+            //boton derecho
             if (idActual < 151 && !mod)
             {
                 idActual++;
@@ -63,6 +65,7 @@ namespace PokedexVS
         }
         private void cargaDatos()
         {
+            //carga los datos que se necesiten, teniendo en cuenta el filtro del tipo
             if(!mod)
             {
                 i = 0;
@@ -89,6 +92,7 @@ namespace PokedexVS
         }
         private void boton_control_Click(object sender, EventArgs e)
         {
+            //boton para mostrar los movimientos, descripción y imagen
             if(boton_control.Text == "Movimientos")
             {
                 pictureBox1.Visible = false;
@@ -124,6 +128,7 @@ namespace PokedexVS
 
         private void boton_tipo_Click(object sender, EventArgs e)
         {
+            //botones de filtrado por tipos
             btns = (Button)sender;
             if (mod == false)
             {

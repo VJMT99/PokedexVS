@@ -13,7 +13,7 @@ namespace PokedexVS
         public MySqlConnection conexion;
         public Conexion()
         {
-            conexion = new MySqlConnection("Server = 127.0.0.1; Database = listapokemons; Uid = root; Pwd =; Port = 3307;");
+            conexion = new MySqlConnection("Server = 127.0.0.1; Database = listapokemons; Uid = root; Pwd =; Port = 3306;");
         }
 
         public DataTable getPokemonPorId(int id)
